@@ -4,13 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
+<style type="text/css">
+body{
+background-image:
+		url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+	background-size: cover;
+}
+</style>
 </head>
 <body>
+<iframe src="fetchall" style="width:100% ;height: 100%;"></iframe>
+<fieldset>
+<h1 style="color: green ">${pass}</h1>
+<h1 style="color: red ">${fail}</h1>
 <h1>${msg}</h1>
 <a href="insert"><button>Insert Record</button></a>
 
 <a href="fetchall"><button >FetchAll Record</button></a>
-
+</fieldset>
 </body>
 </html>

@@ -4,7 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Insert Data</title>
+<style type="text/css">
+body{
+background-image:
+		url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+	background-size: cover;
+}
+</style>
 </head>
 <body>
  <h1>Student Information Form</h1>

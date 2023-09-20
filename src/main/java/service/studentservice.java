@@ -56,10 +56,12 @@ public class studentservice {
 	        List<student> list=dao.fetchall();
 	        if(list.isEmpty())
 	        {
+	        	map.put("fail","Data Not Found");
 	        	return "home";
 	        }
 	        else{
 	        	map.put("list",list);
+	        	map.put("pass", "Data Found");
 	        	return "fetch";
 	        }
 	    }
