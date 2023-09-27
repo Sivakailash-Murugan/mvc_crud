@@ -69,7 +69,7 @@ public class studentservice {
 	public String fetch(int id, ModelMap map) {
 	student student=dao.fetch(id);
 	
-	map.put("details", student);
+	map.put("student", student);
 		return "edit";
 	}
 

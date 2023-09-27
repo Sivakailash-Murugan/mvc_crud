@@ -14,7 +14,7 @@ background-image:
 </style>
 </head>
 <body>
-<iframe src="fetchall" style="width:100% ;height: 100%;"></iframe>
+
 <fieldset>
 <h1 style="color: green ">${pass}</h1>
 <h1 style="color: red ">${fail}</h1>

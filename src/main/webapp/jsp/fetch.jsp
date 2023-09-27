@@ -19,13 +19,20 @@ body {
 </head>
 <body>
 <h1>Welcome to display page</h1>
-<c:forEach var="student" items="${list}">
+
 <table border="1">
+<tr>
+<th colspan="5">Personal</th>
+<th colspan="6">Acedemic</th>
+<th colspan="2">Action</th>
+
+</tr>
 <tr>
 <th>Id</th>
 <th>Name</th>
 <th>Email</th>
 <th>Mobile</th>
+<th>DOB</th>
 <th>MathsMark</th>
 <th>ScienceMark</th>
 <th>EnglishMark</th>
@@ -36,12 +43,13 @@ body {
 <th>Delete</th>
 </tr>
 
-
+<c:forEach var="student" items="${list}">
 <tr>
 <td>${student.getId()}</td>
 <td>${student.getName()}</td>
 <td>${student.getEmail()}</td>
 <td>${student.getMobile()}</td>
+<td>${student.getDate()}</td>
 <td>${student.getMathMarks()}</td>
 <td>${student.getScienceMarks()}</td>
 <td>${student.getEnglishMarks()}</td>
@@ -51,22 +59,27 @@ body {
 <td><a href="update?id=${student.getId()}"><button>Update</button></a></td>
 <td><a href="delete?id=${student.getId()}"><button>Delete</button></a></td>
 </tr>
-
+</c:forEach>
 
 </table>
-</c:forEach>
+
 <button id="add">Add Data</button>
+<button id="cancel">cancel</button>
 
-
-<iframe src="insert" style="height: 100%;width: 100%;display: none;" id="iff"></iframe>
+<iframe src="insert" style="height: 400px;width: 100%;display: none;" id="iff"></iframe>
 <script type="text/javascript">
 var add=document.querySelector("#add");
 var ifram=document.querySelector("#iff");
+var cancel=document.querySelector("#cancel");
 add.addEventListener("click",()=>{
 	ifram.style.display="block";
 	
 });
 
+cancel.addEventListener("click",()=>{
+	ifram.style.display="none";
+	
+});
 
 </script>
 </body>
